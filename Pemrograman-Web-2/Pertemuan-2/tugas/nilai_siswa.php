@@ -9,17 +9,6 @@
     $_uas = $_POST['uas'];
     $_tugas = $_POST['tugas'];
 
-    // untuk mengecek apakah nilai yang diinputkan benar atau tidak
-    // if ($_uts >= 0 && $_uas >= 0 && $_tugas >= 0) {
-    //     if ($_uts > 100 || $_uas > 100 || $_tugas > 100) {
-    //         echo "<script>alert('Nilai yang anda masukkan salah!');window.location='form_nilai.php';</script>";
-    //     }
-    // } else {
-    //     echo "<script>alert('Nilai yang anda masukkan salah!');window.location='form_nilai.php';</script>";
-    // }
-
-
-
     // mencari rata-rata dan nilai total
     $_nilaiT = ( $_tugas + $_uts + $_uas) / 3;
 
@@ -103,7 +92,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <table class="table">
+    <table class="table table-bordered border-primary">
         <thead>
             <tr>
                 <th scope="col">Nama Mahasiswa</th>
