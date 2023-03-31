@@ -1,12 +1,12 @@
 <?php 
     require_once 'dbkoneksi.php';
 
-    if(isset($_GET['idedit'])){
-        $id = $_GET['idedit'];
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
 
 
         $sql = "SELECT * FROM pelanggan WHERE id = :id";
-        $stmt = $dbh->prepare($sql);
+        $stmt = $conn->prepare($sql);
         $stmt->bindParam(':id' , $id);
         $stmt->execute();
 
@@ -16,7 +16,7 @@
 
 ?>
 
-<form method="post" action="proses_pelanggan.php">
+<form method="post" action="proses.php">
     <input type="hidden" name="id" value="<?=  $row['id']     ?>">
 
     <label for="">KODE</label>
@@ -32,7 +32,7 @@
     <input type="radio" name="jk" value="L" checked>
     <br>
     <label for="">Perempuan</label>
-    <input type="radio" name="jk" value="P" > <br><br>
+    <input type="radio" name="jk" value="P" >    <br><br>
 
 
     <label for="">Tempat Lahir</label>
@@ -46,8 +46,12 @@
 
     <label for="">Kartu ID</label>
     <input type="select" name="kartu_id" value="<?=   $row['kartu_id']   ?>">
-    <br><br>
-
-    <button type="submit" name="proses_pelanggan" value="Update">UPDATE</button>
-
+    <br><br><div class="form-group row">
+    
+    <div class="offset-4 col-8">
+      <!-- <input type="submit" name="proses" type="submit" 
+      class="btn btn-primary" value="Update"/> -->
+      <button type="submit" name="proses"value="Update">Update</button>
+    </div>
+  </div>
 </form>

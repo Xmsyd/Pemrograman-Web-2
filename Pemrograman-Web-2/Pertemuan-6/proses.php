@@ -10,7 +10,7 @@ require_once 'dbkoneksi.php';
    $_email = $_POST['email'];
    $_kartu_id = $_POST['kartu_id'];
 
-   $_proses = $_POST['proses_pelanggan'];
+   $_proses = $_POST['proses'];
 
    // array data
    $ar_data[]=$_kode; // ? 1
@@ -31,9 +31,9 @@ require_once 'dbkoneksi.php';
     tgl_lahir=?,email=?,kartu_id=? WHERE id=?";
    }
    if(isset($sql)){
-    $st = $dbh->prepare($sql);
+    $st = $conn->prepare($sql);
     $st->execute($ar_data);
    }
 
-   header('location:list_pelanggan.php');
+   header('location:index.php');
 ?>
