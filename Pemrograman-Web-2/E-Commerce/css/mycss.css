@@ -1,0 +1,73 @@
+/* Mengatur Box Sidebar */
+.mycontainer {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: aliceblue;
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.main-content {
+    background-color: black;
+    flex-grow: 1;
+}
+
+/* Mengatur Item yang ada di sidebar */
+/* Mengatur Item bagian header side bar */
+.sidebar .description-header {
+    width: 46px;
+    height: 24px;
+    left: 66px;
+    top: 170px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .header .list-item {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    padding: 12px 10px;
+    border-radius: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .fa {
+font-size: 2em;
+}
+
+.sidebar .header .list-item .icon {
+    margin-right: 12px;
+}
+
+/* Mengatur Main Sidebar */
+/* .sidebar .main .list-item .description { */
+    /* font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+} */
+
+/* .sidebar .header .list-item {
+    
+} */
