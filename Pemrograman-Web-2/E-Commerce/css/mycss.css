@@ -20,7 +20,7 @@ nav {
     background-color: #0B3044;
 }
 
-.header .logo {
+.header .logo h4 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -258,20 +258,117 @@ nav {
     justify-content: space-between;
 }
 
-.main-content .header-content .col-5 .tmb-filter {
-    width: 300px;
-    height: 63px;
 
-    background: #FFFFFF;
-    border-radius: 15px;
+/* Filter Content */
+.container-filter {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+}
+
+.container-filter h2 {
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    text-align: start;
+}
+
+.radio-button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-radio input{
+    display: none;
+}
+
+.radio-btn {
+    margin: 10px;
+    width: 90px;
+    height: 79px;
+    border: 3px solid transparent;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #c3c3c367;
+    cursor: pointer;
+}
+
+.radio-btn > i {
+    color: #FFFFFF;
+    background-color: darkmagenta;
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+    border-radius: 50px;
+    padding: 3px;
+    transition: 0.2s;
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.radio-btn .filter-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-btn .filter-icon {
+    line-height: 80px;
+    font-size: 30px;
+    color: darkmagenta;
+}
+
+.radio-btn .filter-icon h3 {
+    font-family:'Montserrat', sans-serif;
+}
+
+.radio-button h3 {
+    font-size: large;
+}
+
+.custom-radio input:checked + .radio-btn {
+    border: 3px solid darkmagenta;
+}
+
+.custom-radio input:checked + .radio-btn > i {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.main-content .header-content .col-5 .tmb-filter {
+    width: 100px;
+    height: 30px;
+
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: darkmagenta;
+    border: darkmagenta 2px solid;
+    border-radius: 30px;
     box-sizing: border-box;
 
+}
+
+.main-content .header-content .col-5 .tmb-filter:hover {
+    background-color: #ff6600;
+    transition: 0.5s ease;
 }
 
 .main-content .header-content .col-5 .tmb-fil {
     display: flex;
     justify-content: center;
 }
+
+
 
 /* Mengatur List Category */
 .category li {

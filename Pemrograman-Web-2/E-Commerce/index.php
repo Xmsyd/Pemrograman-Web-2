@@ -137,13 +137,54 @@
                 </div>
 
                 <!-- Sebelah kanan -->
-                <div class="col-5 header-kanan">
+                <div class="col-5 header-kanan container-filter mt-2">
                     <h2>Search By <b>Book!</b></h2>
-                    <div class="filter">
-                        <div class="filter1"></div>
-                        <div class="filter2"></div>
-                        <div class="filter3"></div>
+                    <div class="radio-button">
+                        <!-- opsi 1 -->
+                        <label for="week" class="custom-radio">
+                            <input type="radio" id="week" name="topbook" value="week">
+                            <span class="radio-btn"><i class="fa fa-check"></i>
+                                <div class="filter-icon mt-4">
+                                    <h3>Top Weekly</h3>
+                                </div>
+                            </span>
+                        </label>
+                        <!-- opsi 2 -->
+                        <label for="month" class="custom-radio">
+                            <input type="radio" id="month" name="topbook" value="month">
+                            <span class="radio-btn"><i class="fa fa-check"></i>
+                                <div class="filter-icon mt-4">
+                                    <h3>Top Monthly</h3>
+                                </div>
+                            </span>
+                        </label>
+                        <!-- opsi3 -->
+                        <label for="year" class="custom-radio">
+                            <input type="radio" id="year" name="topbook" value="year">
+                            <span class="radio-btn"><i class="fa fa-check"></i>
+                                <div class="filter-icon mt-4">
+                                    <h3>Top Yearly</h3>
+                                </div>
+                            </span>
+                        </label>
                     </div>
+                    <!-- <div class="filter">
+                        <div class="filter1">
+                            <h2>Top Weekly</h2>
+                            <div class="radio-button">
+                                <label class="custom-radio">
+                                    <input type="radio" name="radio">
+                                    <span class="radio-btn"><i class=""></i></span>
+                                </label>    
+                            </div> -->
+                        <!-- </div>
+                        <div class="filter2">
+                            <h2>Top Monthly</h2>
+                        </div>
+                        <div class="filter3">
+                            <h2>Top Yearly</h2>
+                        </div>
+                    </div> -->
                     <div class="tmb-fil mt-4">
                         <button class="tmb-filter">Filter</button>
                     </div>
