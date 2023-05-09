@@ -21,7 +21,8 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/mycss.css">
-
+    <!-- My Js -->
+    
     <style>
         /* mengatur tombol login dan sign up */
         .div-tombol {
@@ -128,6 +129,13 @@
 
         <!-- Main Conten / Konten Utama yang akan ditampilkan -->
         <div class="main-content">
+            <div id="menu-button">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" id="menu-label">
+                    <div id="hamburger"> </div>
+                </label>
+
+            </div>
             <!-- Header Content -->
             <div class="header-content">
                 <!-- Sebelah Kiri -->
@@ -168,23 +176,6 @@
                             </span>
                         </label>
                     </div>
-                    <!-- <div class="filter">
-                        <div class="filter1">
-                            <h2>Top Weekly</h2>
-                            <div class="radio-button">
-                                <label class="custom-radio">
-                                    <input type="radio" name="radio">
-                                    <span class="radio-btn"><i class=""></i></span>
-                                </label>    
-                            </div> -->
-                        <!-- </div>
-                        <div class="filter2">
-                            <h2>Top Monthly</h2>
-                        </div>
-                        <div class="filter3">
-                            <h2>Top Yearly</h2>
-                        </div>
-                    </div> -->
                     <div class="tmb-fil mt-4">
                         <button class="tmb-filter">Filter</button>
                     </div>
@@ -215,6 +206,7 @@
             </div>
         </div>
     </div>
+    <script src="js/myjs.js"></script>
 </body>
 
 </html>
