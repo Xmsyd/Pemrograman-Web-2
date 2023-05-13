@@ -1,6 +1,7 @@
 <?php 
 require_once 'dbkoneksi.php';
 ?>
+
 <?php 
    $_kode = $_POST['kode'];
    $_nama = $_POST['nama'];
@@ -15,11 +16,11 @@ require_once 'dbkoneksi.php';
    // array data
    $ar_data[]=$_kode; // ? 1
    $ar_data[]=$_nama; // ? 2
-   $ar_data[]=$_jk;// 3
-   $ar_data[]=$_tmp_lahir;
-   $ar_data[]=$_tgl_lahir;
-   $ar_data[]=$_email;     // ? 7
-   $ar_data[]=$_kartu_id; // ? 8
+   $ar_data[]=$_jk;//? 3
+   $ar_data[]=$_tmp_lahir;//? 4
+   $ar_data[]=$_tgl_lahir;//? 5
+   $ar_data[]=$_email;     //? 6
+   $ar_data[]=$_kartu_id; //? 7
 
    if($_proses == "Simpan"){
     // data baru

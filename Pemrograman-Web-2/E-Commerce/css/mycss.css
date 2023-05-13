@@ -43,10 +43,11 @@ nav {
     border-bottom-right-radius: 0;
 }  
 
-.header .header-button1 .icon-header {
+/* .header .header-button1 .icon-header {
     color: darkmagenta;
-}
-  
+} */
+
+/*   
 .header .header-button2 .btn {
     --bs-btn-color: darkmagenta;
     --bs-btn-border-color: darkmagenta;
@@ -62,13 +63,14 @@ nav {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: darkmagenta;
     --bs-gradient: none;
-}
+} */
 
 /* Mengatur Box Sidebar */
 .mycontainer {
     display: flex;
     min-height: 100vh;
     background-color: white;
+    
 }
 
 .sidebar {
@@ -96,6 +98,7 @@ nav {
     background-color: white;
     color: #0B3044;
     flex-grow: 1;
+    
 }
 
 /* Mengatur Item yang ada di sidebar */
@@ -528,3 +531,10 @@ nav {
     background-color: #333;
     color: darkmagenta;
 }
+
+
+
+
+/* <h1> List-Produk HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE  produk productapalah itu </h1> */
+
+
