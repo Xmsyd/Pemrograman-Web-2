@@ -121,7 +121,7 @@ require_once 'dbkoneksi.php';
           </div>
         </div>
         <div class="card-footer">
-          <input type="submit" name="proses" type="submit" class="btn btn-warning" value="Simpan" />
+          <input name="proses" type="submit" class="btn btn-warning" value="Simpan" />
           <a href="index.php" class="btn btn-danger float-right">Batal</a>
         </div>
       </div>

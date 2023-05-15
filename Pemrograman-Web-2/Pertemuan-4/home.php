@@ -1,6 +1,5 @@
 <?php 
     include_once 'template/header.php';
-
 ?>
 
 <table class="table">
@@ -14,6 +13,7 @@
       <th scope="col">Rombel</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <th>1</th>
