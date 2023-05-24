@@ -47,3 +47,22 @@ Route::get('user/daftar',
     
 Route::post('/user/store', 
     [UserController::class, 'store'])->name('user/store');
+    
+use App\Http\Controllers\TokoController;
+
+Route::prefix('toko') -> group(function(){
+
+    
+    Route::get('/',
+        [TokoController::class, 'index']);
+
+    Route::get('/detail',
+        [TokoController::class, 'detail']);
+
+    // Route::get('/profile',
+    //     [TokoController::class, 'index']);
+
+
+    
+
+});
