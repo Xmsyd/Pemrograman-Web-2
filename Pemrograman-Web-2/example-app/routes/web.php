@@ -47,7 +47,19 @@ Route::get('user/daftar',
     
 Route::post('/user/store', 
     [UserController::class, 'store'])->name('user/store');
-    
+
+
+// P9
+use App\Http\Controllers\P9Controller;
+
+Route::get('P9/index',
+    [P9Controller::class, 'index']);
+
+Route::post('P9/bayar',
+    [P9Controller::class, 'bayar'])->name('P9/bayar');
+
+
+// P10
 use App\Http\Controllers\TokoController;
 
 Route::prefix('toko') -> group(function(){
