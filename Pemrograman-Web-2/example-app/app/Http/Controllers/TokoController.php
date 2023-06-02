@@ -17,6 +17,12 @@ class TokoController extends Controller
         return view('toko/detail');
     }
 
+    //P10 Tugas
+    public function profile ()
+    {
+        return view('toko/profile');
+    }
+
     // P11 Laravel
     public function admin ()
     {
