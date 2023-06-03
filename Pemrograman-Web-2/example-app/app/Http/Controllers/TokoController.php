@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Produk;
+use App\Models\Customer;
 
 class TokoController extends Controller
 {
@@ -28,5 +29,12 @@ class TokoController extends Controller
     {
         $products = Produk::all();
         return view ('toko/admin', compact('products'));
+    }
+
+    // P11 Laravel
+    public function customer ()
+    {
+        $customers = Customer::all();
+        return view ('toko/customer', compact('customers'));
     }
 }
