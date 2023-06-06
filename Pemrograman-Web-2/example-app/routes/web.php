@@ -76,11 +76,26 @@ Route::prefix('toko') -> group(function(){
 
     // P11
     Route::get('/admin',
-    [TokoController::class, 'admin']);
+    [TokoController::class, 'admin'])->name('produk.admin');
     
     // tugas P11
     Route::get('/customer',
         [TokoController::class, 'customer']);
 
+    // Praktikum 12
+    Route::get('create', 
+        [TokoController::class, 'create'])->name('produk.create');
+
+    Route::post('/', 
+        [TokoController::class, 'store'])->name('produk.store');
+
+    Route::get('/{product}/edit',
+    [TokoController::class, 'edit'])->name('produk.edit');
+
+    Route::delete('/{product}',
+    [TokoController::class, 'destroy'])->name('produk.destroy');
+
+    Route::put('/{product}',
+    [TokoController::class, 'update'])->name('produk.update');
 
 });
